@@ -1,6 +1,6 @@
 # Description
 
-Please include a summary of the change and/or which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
+Please include a summary of the changes you have done and an explanation on how to use them. If is a bug fix, include a capture to prove the bug has been fixed. If is a new feature, please explain how it works and how to use it. If it is a breaking change, explain how is necessary.
 
 ## Type of change
 
@@ -9,7 +9,6 @@ Please delete options that are not relevant.
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
 
 # How Has This Been Tested?
 
