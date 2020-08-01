@@ -1,6 +1,10 @@
 import pandas as pd
 from conection.conection import conect_mysql
 
+"""
+Creates the Platopedia DataBase
+"""
+
 comands = {}
 # Create database called PLATOPEDIA
 comands["create_database"] = "CREATE DATABASE IF NOT EXISTS PLATOPEDIA;"
