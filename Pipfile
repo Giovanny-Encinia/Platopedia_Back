@@ -4,11 +4,17 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pylint = "*"
+black = "*"
 
 [packages]
 pandas = "==1.0.5"
 numpy = "==1.19.1"
 pydash = "==4.8.0"
+mysql-connector-python = "*"
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
