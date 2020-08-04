@@ -31,6 +31,10 @@ comands[
 
     idFood INT AUTO_INCREMENT NOT NULL,
     NameFood VARCHAR(45) NOT NULL,
+    Description VARCHAR(250),
+    CommonName VARCHAR(50),
+    ScientificName VARCHAR(100),
+    Brand VARCHAR(100),
     Group_idGroup INT,
     CONSTRAINT pk_Food
     PRIMARY KEY(idFood),
@@ -131,3 +135,4 @@ for comand in comands:
     cursor.close()
     database.close()
 
+df = pd.read_csv("data-csv/food.csv")
