@@ -12,6 +12,9 @@ pandas = "==1.0.5"
 numpy = "==1.19.1"
 pydash = "==4.8.0"
 mysql-connector-python = "*"
+django = "*"
+install = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.7"
