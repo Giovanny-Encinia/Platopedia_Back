@@ -8,4 +8,5 @@ cursor = database.cursor()
 cursor.execute("CREATE DATABASE PlatopediaFoodInfo;")
 cursor.close()
 database.close()
+print("\n SE HA CREADO LA BASE DE DATOS!! \n")
 
