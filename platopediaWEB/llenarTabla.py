@@ -23,7 +23,7 @@ def llenar():
             np.where(groups == group_item)[0][0]
         )  # identifica el indice del grupo
     df_food = df.iloc[:, 2:6]  # Toma las columnas de Food
-    n_rows, n_cols = df_food.shape
+    n_rows=df_food.shape[0]
     list_food = []  # Se guardaran los objetos de la tabla food
     for row in range(n_rows):  # Llena la tabla Food
         list_food.append(
