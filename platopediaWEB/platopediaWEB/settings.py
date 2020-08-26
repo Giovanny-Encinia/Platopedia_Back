@@ -77,7 +77,7 @@ WSGI_APPLICATION = "platopediaWEB.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "platopediafoodinfo",
+        "NAME": "platopediafoodinfo_v2",
         "USER": "postgres",
         "PASSWORD": "&PA2PA6BY9&&{1605497gio}",
         "HOST": "localhost",

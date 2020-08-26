@@ -20,9 +20,7 @@ class Vitamins(models.Model):
 
 class Value_Vitamins(models.Model):
     food = models.ForeignKey(Food, on_delete=models.CASCADE, null=False, blank=False)
-    vitamins = models.ForeignKey(
-        Vitamins, on_delete=models.CASCADE, null=False, blank=False
-    )
+    fk = models.ForeignKey(Vitamins, on_delete=models.CASCADE, null=False, blank=False)
     value = models.FloatField()
 
 
@@ -33,9 +31,7 @@ class Minerals(models.Model):
 
 class Value_Minerals(models.Model):
     food = models.ForeignKey(Food, on_delete=models.CASCADE, null=False, blank=False)
-    minerals = models.ForeignKey(
-        Minerals, on_delete=models.CASCADE, null=False, blank=False
-    )
+    fk = models.ForeignKey(Minerals, on_delete=models.CASCADE, null=False, blank=False)
     value = models.FloatField()
 
 
@@ -46,7 +42,7 @@ class PrincipalNutriments(models.Model):
 
 class Value_PrincipalNutriments(models.Model):
     food = models.ForeignKey(Food, on_delete=models.CASCADE, null=False, blank=False)
-    principalnutriments = models.ForeignKey(
+    fk = models.ForeignKey(
         PrincipalNutriments, on_delete=models.CASCADE, null=False, blank=False
     )
     value = models.FloatField()
