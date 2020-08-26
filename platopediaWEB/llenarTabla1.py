@@ -1,7 +1,15 @@
 def llenar_tablas_valores(
     df, col_i, col_f, table_name, value_table_name, raw_name, list_food
 ):
-
+    """
+    df: objeto tipo dataframe
+    col_i: integer que señala el inicio de las columnas a usar del df
+    col_f: final de columnas del df
+    table_name: object tipo model, simboliza las tablas en la base de datos
+    value_table_name: objeto tipo model que referencia a la tabla de valores
+    raw_name: nombre que recibe la tabla, solo es para una vizualizacion, no afecta
+    list_food: lista con los objetos tipo model de la tabla FOOD
+    """
     print(f"Se comienza a crear la tabla {raw_name}\n")
     table_df = df.iloc[:, col_i:col_f]
     list_nutr_name = [
@@ -13,14 +21,14 @@ def llenar_tablas_valores(
         f"Se comienza a crear la tabla de valores asociada a las tablas FOOD y {raw_name}"
     )
 
-    value_table = table_df.stack()
-    values_list = []
+    value_table = table_df.stack()  # transforma los datos en serie
+    values_list = []  # aqui guardaremos los valores del df
 
     for val in value_table:
         values_list.append(val)
 
     i = 0
-    list_nutr_value = []
+    list_nutr_value = []  # se guardan objetos
 
     for row in range(df.shape[0]):
 
