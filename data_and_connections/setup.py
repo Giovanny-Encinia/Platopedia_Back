@@ -11,7 +11,7 @@ class requests_object:
         self.get_url = get_url if get_url else post_url
         self.extended_get_url = f"{extended_get_url}{token}"
 
-    def post(self,**kwargs): #TODO: testm post function (since it wasn't working last time)
+    def post(self,**kwargs): #TODO: test post function (since it wasn't working last time)
         kwargs["headers"]["Authorization"] = f"Bearer {self.token}"
         return requests.get(self.post_url,**kwargs)
 
@@ -37,6 +37,7 @@ def setup(setup:str = "DEFAULT") -> requests_object:
     Returns:
         requests_object: a requests_object type
     """
+    #TODO: Better validation of retrieved attributes
     setup = setup.upper()
     get_url = pyget(os.environ,f"{setup}_GET_URL","get_url FAIL")
     post_url = pyget(os.environ,f"{setup}_POST_URL","post_url FAIL")
